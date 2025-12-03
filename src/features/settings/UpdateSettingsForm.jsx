@@ -13,10 +13,12 @@ function UpdateSettingsForm() {
       maxBookingLength,
       maxGuestPerBooking,
       breakfastPrice,
-    },
+    }={},
     isLoading,
     error,
   } = useSettings();
+
+
   const { updateSettings, isUpdating } = useUpdateSettings();
   // const {minBookingLength, maxGuestPerBooking, breakfastPrice,maxBookingLength} = settings;
   if (isLoading) return <Spinner />;
